@@ -4,25 +4,31 @@
     height: 200px;
     border: 2px solid #000;
     border-radius: 50%;
+    /* Center the clock hands */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clock .hour-hand, .clock .minute-hand, .clock .second-hand {
     position: absolute;
     background-color: #000;
-    transform-origin: center;
 }
 
 .hour-hand {
     width: 4px;
-    height: 50px;
+    height: 40px;
+    transform-origin: 50% 100%; /* Rotate from the bottom center */
 }
 
 .minute-hand {
     width: 3px;
-    height: 70px;
+    height: 60px;
+    transform-origin: 50% 100%; /* Rotate from the bottom center */
 }
 
 .second-hand {
     width: 2px;
-    height: 90px;
+    height: 80px;
+    transform-origin: 50% 100%; /* Rotate from the bottom center */
 }
