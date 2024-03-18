@@ -1,1 +1,28 @@
-/* Your CSS Code here. */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.clock .hour-hand, .clock .minute-hand, .clock .second-hand {
+    position: absolute;
+    background-color: #000;
+    transform-origin: center;
+}
+
+.hour-hand {
+    width: 4px;
+    height: 50px;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 70px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 90px;
+}
